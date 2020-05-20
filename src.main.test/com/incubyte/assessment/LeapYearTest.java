@@ -12,5 +12,12 @@ class LeapYearTest {
 		int year = 2017;
 		assertEquals(leapYear.isLeapYear(year), false);
 	}
+	
+	@Test
+	void isYearDivisibleByFourButNotByHunderd() {
+		LeapYear leapYear = new LeapYear();
+		int year = 2016;
+		assertEquals(leapYear.isLeapYear(year), true);
+	}
 
 }
